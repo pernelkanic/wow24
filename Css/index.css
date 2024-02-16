@@ -1355,8 +1355,15 @@ height: 271px;
   font-size: 16px;
 }
     
-
-    
+.changepad1{
+  padding-left: 6.3em !important; 
+}
+.changepad2{
+  padding-left: 6.3em !important; 
+}  
+.changepad3{
+  padding-left: 5.3em !important; 
+}    
 
   @media only screen and (max-width: 800px)  {
     html, body {overflow-x: hidden;}
@@ -1396,6 +1403,9 @@ height: 271px;
       -webkit-transition: all .15s ease-in-out;
       transition: all .15s ease-in-out;
    
+    }
+    .info h3{
+      padding-left: 1em;
     }
     .button-1:hover {
       box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
