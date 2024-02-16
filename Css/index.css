@@ -1382,6 +1382,21 @@ height: 271px;
       height: 70px;
    
     }
+    .changepad1{
+      padding-left: 3em !important; 
+    }
+    .changepad2{
+      padding-left: 3em !important; 
+    }  
+    .changepad3{
+      padding-left: 1em !important; 
+    }  
+    .changepad4{
+      padding-left: 2em !important;
+    }
+    .changepad5{
+      padding-left: 2em !important;
+    }
     .wowlogo{
       width: 6em;
       align-items: center;
