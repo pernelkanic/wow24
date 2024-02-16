@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+    <script src="index.js"></script>
+    <title>War Of Words</title>
+    
+</head>
+
+<body >
+    <div style="display: none" id="hideAll">&nbsp;</div>
+
+    <div class="toppage" >
+      <div id="particles-js"></div>
+    
+    <nav class="stroke">
+      <!-- <img src="./Assets/wowlogo.png" class="wowlogo" alt=""> -->
+      <!-- <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><div class="button text">Register</div></li>
+      </ul> -->
+      
+      <img src="./Assets/atriumlogo.png" width="100rem" height="100rem" style="margin-top: 5px;" alt="">
+      <img src="./Assets/reclogo.png" width="300rem" alt="">
+      <img src="./Assets/dulogo.jpeg" width="100rem" alt="">
+    
+    </nav>
+  <div class="body-container">
+    
+      <!-- <div class="logo-container">
+          <img src="./Assets/atriumlogo.png"  alt="">
+          <img src="./Assets/reclogo.png" width="200px" height="200px">
+          <img src="./Assets/dulogo.png" alt="">
+      </div> -->
+      <div class="title-regcont">
+      <div class="bodytitle-container">
+          <img src="./Assets/wowsmall.png" alt="">
+          <p id="wowpara">
+          </p>
+        </div>
+        <div class="wrapper">
+          <a class="cta" href="https://linktr.ee/ATRIUM_REC">
+            <span>Register</span>
+            <span>
+              <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                  <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                </g>
+              </svg>
+                
+              </svg>
+            </span> 
+          </a>
+        </div>
+      </div>
+        <div class="date-box" id="">
+          <p id="countdown" ></p>
+      </div>  
+    </div>
+  
+  
+</div>
+      
+      <script src="particles.js"></script>
+      <script src="app.js"></script>
+      
+<div class="abt-container">
+ 
+  <h1 style="color: white;">About</h1>
+  <p style="color: white;">Here are the Event Details!  <b>Hover on the Boxes</b> to read more!</p>
+  <div class="containerabt">
+    <div class="cardabt">
+        <div class="face face1">
+            <div class="content">
+                
+                <h3>What ?</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>War of Words (WoW) is the inter-collegiate annual literary 
+                  fest of Rajalakshmi Engineering College organized jointly by REC Atrium, the 
+                  literary club of the college, and REC Debating Union, the debating society of 
+                  the college. WoW’24, an extravaganza that celebrates English literature and 
+                  creativity, will provide a platform for students across disciplines to exhibit their 
+                  oratory skills, debating flair, and literary prowess through numerous events. The 
+                  event WoW’24 is planned to be conducted on 26th February 2024.</p>
+                   
+            </div>
+        </div>
+    </div>
+    <div class="cardabt">
+        <div class="face face1">
+            <div class="content">
+                
+                <h3>Where ?</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Rajalakshmi Engineering College, Rajalakshmi Nagar, Thandalam, Chennai - 602 105.</p>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="cardabt">
+        <div class="face face1">
+            <div class="content">
+                
+                <h3>When ?</h3>
+            </div>
+        </div>
+        <div class="face face2">
+            <div class="content">
+                <p>Monday, 26th February, 2024</p>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="cover">
+      <div>
+        <h1 >Events</h1>
+        <p style="font-size: 1.4em; ">Here are the events we have lined up for you! Join and win exciting prizes!
+          <b> Click on the events to read more!</b>
+          <p  style="font-size: 1.3em; font-weight: 700 ;">Swipe  ➡️ to see the events</p>
+        </p>
+      </div>
+     
+    
+      <div class="gallery">
+        
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/wow-debate.png');  background-size: 100% 100%;   " ></div>
+              <div class="infos">
+                  <h2 class="eventtitle">WoW Debate</h2>
+                 
+                  <h3 class="seats"><b>A Clash of words</b></h3>
+                  <hr>
+                  <p class="txt">WoW Debate allows teams to take part in a Parliamentary debate 
+                    and use their wit and persuasiveness to battle it out and convince the judges that 
+                    they are right.
+                  
+                  </p>
+                  <button class="button-24" role="button" onclick="location.href='https://forms.gle/ASKbwPjfF88CX7fk9'">Register</button>
+                  <br>
+                  <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. This is a team event with 2 participants per team.</p>
+                  <p>2. The motion for the debate will be provided on spot, along with a brief preparation time. For & against the motion will be randomly assigned.</p>
+                  <p>3. General Parliamentary debate procedures will be followed, with each speaker's timing being 4 minutes.</p>
+                  <p>4. 
+                    The format will primarily be British Parliamentary.</p>
+                  <p>5. Use of unparliamentary language and vulgarity is strictly prohibited.</p>
+                  <p>6. The Judge’s decision will be final.</p>
+                 
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                <p> Afra naaz aftab - +91 99627 99668</p>
+                <p>Sri Pranauv - +91 95979 33133</p>
+              </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb"  style="background-image: url('./Assets/treasureamongus.png');  background-size: 100% 100%;   " ></div>
+              <div class="infos">
+                  <h2 class="eventtitle" >Treasure Among Us</h2>
+                 
+                  <h3 class="seats"><b>Chase the Trail.</b></h3>
+                  <hr>
+                  <p class="txt">Treasure Among Us offers two captivating rounds of mystery and 
+                    strategy. In the first round, participants tackle tasks while impostors lurk, aiming 
+                    to outwit and eliminate them. Winners advance to a high-stakes treasure hunt, 
+                    racing to find the key to the ultimate battle royale. It's an adrenaline-fueled 
+                    journey of camaraderie and triumph, where every victory is a testament to 
+                    courage and cunning. </p>
+                    <button class="button-24" role="button" onclick="location.href=' https://forms.gle/znomxMov7j7uetxCA'">Register</button>
+                    <br>
+                    <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. This is an individual event.</p>
+                  <p>2. The participants will have to complete tasks to decode clues to find the treasure.</p>
+                  <p>3. The imposter will act as a barricade.</p>
+                  <p>4. Profanity of any kind will lead to disqualification.</p>
+                  <p>5. The participants will be judged based on their rapid proceedings, and ability to decode and identify the imposter.</p>
+                  <p>6. Best three players will move on to the final round and battle out to find the hidden treasure.</p>
+                
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p>  Hiranmayee
+                    - +91 70108 24704</p>
+                  <p> Adhithyan Aravind
+                    - +91 99529 89679</p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/litquiz.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Lit-Quiz</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">An evaluation of one's literary acumen, individual participants will 
+                    face questions encompassing both contemporary and timeless works of 
+                    literature. </p>
+                    <button class="button-24" role="button" onclick="location.href='https://forms.gle/wgoRRZdVmcLkumfo8'">Register</button>
+                    <br>
+                    <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. The event will take place in 2 rounds, with questions based on classic and contemporary novels, authors and poems.</p>
+                  <p>2. The first round will be a Pen-and-Paper style Multiple Choice Quiz where the questions are read out by the Organising Committee and the participants have to write down the answers in a clear, legible handwriting.</p>
+                  <p>3. There will be 20 questions in the first round, with each question carrying 10 points and the participants will have to secure at least 100 points in the first round to qualify for the second round.</p>
+                  <p>4. Usage of any electronic devices and aids are prohibited. Smartphones and other paraphernalia must be submitted with the Organising Committee before commencement of the event.The second round will be a buzzer-round where the questions will be read out to the participants and the participants have to sound the buzzer if they know the answer. The order in which the participants are called to present their answer will be the order in which the buzzer was hit, if the first participant to sound the buzzer fails to provide the correct answer.</p>
+                  <p>5.There will be 10 questions in the second round, with 10 points for the correct answer.</p>
+                  <p>6. The participants with the highest scores at the end of the second round will be named as the winners of the LitQuiz.</p>
+                   <p>7. The decision of the Quizmaster is final.</p>
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p> Shreya - +91 98406 27348</p>
+                  <p>Harunicshini
+                      - +91 76200 91319 </p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb"  style="background-image: url('./Assets/lawyerup.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Lawyer Up</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">In this solo challenge, participants will be presented with the 
+                    intricacies of a crime scene. Thinking swiftly on their feet, they must adeptly 
+                    advocate for their client's innocence, crafting a compelling defense strategy. </p>
+                    <button class="button-24" role="button" onclick="location.href='https://forms.gle/JrtuYi7z49DPavF68'">Register</button>
+                    <br>
+                    <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. In this event, two participants will be given a case file in which the crime scene and forensic details will be described. Each person will be assigned a suspect, and your task will be to act as a lawyer and try to prove your client's innocence to the jury within 2.5 minutes each (1.5 minutes + 1 minute).</p>
+                  <p>2. Each participant will be judged based on eloquence, persuasiveness, relevance, creativity, and the use of legal jargon.</p>
+                  <p>3. New witnesses cannot be introduced by the lawyers.</p>
+                  <p>4. The judge can bring in new characters, evidence, or change facts to stress test the lawyers.</p>
+                 
+                  <p>5. 
+                    The usage of slurs, being disrespectful towards the participant will not be tolerated.</p>
+                
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p>  Swetha
+                    - +91 8525924368</p>
+                  <p> Mohneesh
+                    - +91 81475 79586 </p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/shipwreck.png ');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Shipwreck</h2>
+                 
+                  <h3 class="seats"><b>Clutch the lifejacket.</b></h3>
+                  <hr>
+                  <p class="txt">Shipwreck is a game where players, as shipwreck survivors, 
+                    strategically persuade the captain for a life jacket to escape a sinking ship, 
+                    managing alliances and conflicting motives.</p>
+                    <button class="button-24" role="button" onclick="location.href='https://forms.gle/N7454CTiknNboihF8'">Register</button>
+                    <br>
+                    <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. This is an individual event.</p>
+                  <p>2. Each character is assigned on the spot by the judges.</p>
+                  <p>3. Each participant will get a maximum of 5 minutes for their speech.</p>
+                  <p>4. Participants will be asked to switch between Shipwreck and Anti-shipwreck.</p>
+                  <p>5. Judges may ask relevant questions during the participant’s speech or after.</p>
+                  <p>6. Participants are required to behave with the utmost decorum, and any unparliamentary words and vulgarity are strictly prohibited.</p>
+                  <p>7. The judge’s decision is final.</p>
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p> Balaji - +91 70108 24704</p>
+                  <p> Priyadharshini
+                    - +91 70108 24704</p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/prompt.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Prompt-Verse</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">In this immersive challenge, participants delve into the intricate art 
+                    of storytelling, seamlessly melding together vital elements. Their task involves 
+                    crafting a narrative using provided prompts and masterfully narrating their tale. 
+                    The evaluation focuses on their literary finesse and their skill in captivating and 
+                    engaging the audience. Success hinges not only on the written word but also on 
+                    the participants' ability to craft an enthralling oral presentation.</p>
+                    <button class="button-24" role="button" onclick="location.href='https://forms.gle/BTTLChAh1CZXbdCQ6'">Register</button>
+                    <br>
+                    <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. A Prompt will be provided on the spot, post which all the participants will be allotted 40 minutes to pen down a story following the prompt.</p>
+                  <p>2. The story cannot exceed a word count of 300 words.</p>
+                  <p>3. Usage of any electronic devices and aids are prohibited. Smartphones and other paraphernalia must be submitted with the Organising Committee before commencement of the event.</p>
+                  <p>4. After the allotted 40 minutes have elapsed, the participants will be called up to the stage by the Organising Committee, upon which they have to present their story in an engaging manner.</p>
+                  <p>5. The judging criteria include creativity, plot structure, originality, adherence to the prompt and presentation style.</p>
+                    <p>6. It is enforced that the participants not tamper with their written pieces after the allotted time for writing has elapsed.</p>
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p> Afra naaz aftab - +91 99627 99668</p>
+                  <p>Sri Pranauv - +91 95979 33133</p>
+                </div>
+              </div>
+          </article>
+          
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/mysteryroom.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Mystery Rooms</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">A mystery room is a captivating mini literature room where 
+                    knowledge and creativity intertwine. Solve puzzles inspired by novels, decipher 
+                    coded messages from literary quotes, a mini-game, and unlock hidden 
+                    compartments filled with clues. Immerse yourself in the world of words as you 
+                    connect the dots between stories to progress through levels. Only those who 
+                    unravel the literary enigmas will emerge victorious from this unique and 
+                    engaging physical escape challenge. 
+                  
+                  </p>
+                  <button class="button-24" role="button" onclick="location.href='https://forms.gle/CDXV5uvSroS8XFLJ7'">Register</button>
+                  <br>
+                  <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. This is a team event, and each team can consist of 2-4 members.</p>
+                  <p>2. 
+                    All participants are required to maintain decorum throughout the event.</p>
+                  <p>3. Teams must complete tasks using hints provided within the room. Each team can request a maximum of 1 clue per level. Points will be awarded for each completed task.</p>
+                  <p>4. Tasks may involve decoding ciphers, solving riddles, analyzing character motivations, and piecing together storylines provided.</p>
+                  <p>5. This will be a timed event. </p>
+                  <p>6. Teams must complete each given room before proceeding to the next. Teams are allowed to revisit previous levels if necessary.
+                  </p>
+                
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p> Krishnakumar - +91 97899 96433</p>
+                  <p> Mohneesh -
+                    +91 81475 79586</p>
+                  <p> suprajaa -
+                    +91 79042 0796</p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/adzap.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Adzap</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">Adzap is an event where participants embark on transformative 
+                    journeys of brand evolution and narrative discovery. Within our dynamic space, 
+                    creativity flows boundlessly, and innovation flourishes at every turn. Here, 
+                    participants don't passively watch; they actively shape unforgettable experiences 
+                    that resonate profoundly. Join us as we transcend conventional advertising 
+                    boundaries, crafting narratives that captivate and inspire. Every participant here 
+                    reigns as a master storyteller. 
+                  
+                  </p>
+                  <button class="button-24" role="button" onclick="location.href='https://forms.gle/cFPjzmV7R86xVLCp8'">Register</button>
+                  <br>
+                  <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. Teams should have four to five people.</p>
+                  <p>2. Subjects are presented immediately, with 20 minutes allotted for preparation.</p>
+                  <p>3. Each team must make a four-minute pitch live on stage.</p>
+                  <p>4. Should competitors go over the allotted time, judges reserve the right to disqualify the team.</p>
+                  <p>5. Teams can select from a variety of creative expression methods, such as role playing, brief skits, jingles, short speeches, or any other creative format.</p>
+                  <p>6. Teams are permitted to bring the necessary properties.</p>
+                
+                </div>
+                <h3>Contact</h3>
+                <div class="rules">
+                  <p>   Vighnesh - 
+                    +91 96777 42595</p>
+                  <p> Nikhilesh -
+                    +91 93603 05967 </p>
+                </div>
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/script.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Script-writing</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">In this creative endeavor, participants will receive a curated 
+                    selection of established fictional stories. Their imaginative challenge is to craft a 
+                    unique conclusion for any chosen narrative and subsequently pen a script for 
+                    this alternative ending. The emphasis is on unleashing their creativity to reshape 
+                    the storyline, offering a fresh perspective and narrative twist to captivate and 
+                    surprise their audience. 
+                    
+                  
+                  </p>
+                  <button class="button-24" role="button" onclick="location.href='https://forms.gle/ASKbwPjfF88CX7fk9'">Register</button>
+                  <br>
+                  <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. Scripts must be written within a word limit of 1500 words.</p>
+                  <p>2. Profanity is strictly prohibited in all scripts.</p>
+                  <p>3. Authors are required to adhere to the rule of script writing.</p>
+                  <p>4. 
+                    Compliance with these guidelines is mandatory throughout the scripting process.</p>
+             
+                
+                </div>
+                
+              </div>
+          </article>
+        </div>
+        <div class="sampleabt"> 
+          <article class="card">
+              <div class="thumb" style="background-image: url('./Assets/poetry.png');  background-size: 100% 100%;   "></div>
+              <div class="infos">
+                  <h2 class="eventtitle">Poetry</h2>
+                 
+                  <h3 class="seats"><b>The court is now in session.</b></h3>
+                  <hr>
+                  <p class="txt">In this innovative challenge, candidates are empowered to select a 
+                    beloved fictional character and address a modern-day issue in the real world of 
+                    their choosing. The task encourages participants to channel their creativity and 
+                    problem-solving skills, using the unique traits of their chosen character to 
+                    propose inventive solutions to present-day challenges.
+                  
+                  </p>
+                  <button class="button-24" role="button" onclick="location.href='https://forms.gle/ASKbwPjfF88CX7fk9'">Register</button>
+                  <br>
+                  <br>
+                  <h3>Rules:</h3>
+                  
+                  <div class="rules">
+                  <p>1. Engage in the enchanting task of crafting a poem.</p>
+                  <p>2. There's no strict word limit, but keep it concise, under 1500 words.</p>
+                  <p>3. Ensure your verses remain pure, free from any offensive language.</p>
+                  <p>4. Embrace the beauty of poetry as you weave your lines, adhering to these guidelines throughout your creative journey.</p>
+              
+                
+                </div>
+               
+              </div>
+          </article>
+        </div>
+      </div>
+     
+    </div>
+    <div class="roadmap" >
+      <h1 class="sche-title" style="text-align: center;">Schedule Of Events</h1>
+      <img src="./Assets/roadmap.jpeg" class="roadmapimg" >
+    </div>
+  <div>
+   <div class="coordinator-container"> 
+    
+    
+
+
+<div class="atrium-cont-head">
+  <h1 class="atriumcoretitl">Atrium Core</h1>
+    <h2 style="text-align: left; margin-left: 2em;">Swipe ➡️</h2>
+  
+    <div class="carousel">
+      <div class="carousel-cell"><img src="./Assets/alamelumam.jpeg" class="p alamelumamimg" ><p class= "n" >Mrs.G.Alamelu</p>              <p class= "b">Atrium Coordinator</p> <p class="content"></p></div>
+      <div class="carousel-cell"><img src="./Assets/adithya.jpeg" class="p"><p class= "n">Adhityan Aravind</p>              <p class= "b">President</p> <p class="content"></p></div>
+      <div class="carousel-cell"><img src="./Assets/krishnakumar.jpg" class="p"><p class= "n">Krishna Kumar</p>              <p class= "b">Vice President</p></div>
+      <div class="carousel-cell"><img src="./Assets/monish.jpeg" class="p"><p class= "n">Mohneesh </p>              <p class= "b">Secretary</p></div>
+      <div class="carousel-cell"><img src="./Assets/hiranmayee.jpeg" class="p"><p class= "n">Hiranmayee A</p>              <p class= "b">PRO</p></div>
+      <div class="carousel-cell"><img src="./Assets/nikilesh.jpeg" class="p"><p class= "n">Nikhilesh v</p>              <p class= "b">HR</p></div>
+      <div class="carousel-cell"><img src="./Assets/vighnesh.jpg" class="p"><p class= "n">Vighnesh Narayanan</p>              <p class= "b">Event-Manager</p></div>
+      <div class="carousel-cell"><img src="./Assets/shwetha.jpeg" class="p"><p class= "n">Swetha D</p>              <p class= "b">Designer</p></div>
+      <div class="carousel-cell"><img src="./Assets/harunicshini.jpeg" class="p"><p class= "n">Harunicshini</p>              <p class= "b">Editor In Chief</p></div>
+      <div class="carousel-cell"><img src="./Assets/shreya.jpeg" class="p"><p class= "n">Shreya pv</p>              <p class= "b">Editor And Pro</p></div>
+      <div class="carousel-cell"><img src="./Assets/supraja.jpeg" class="p"><p class= "n">Suprajaa A</p>              <p class= "b"> Editor</p></div>
+    </div>
+       <br>
+       <br>
+    
+
+
+</div>
+
+<div class="atrium-cont-head du-container">
+  <h1 class="atriumcoretitl">Debating Union Core</h1>
+    <h2 style="text-align: left; margin-left: 2em;">Swipe ➡️</h2>
+    <div class="carousel carousel2 ">
+      <div class="carousel-cell"><img src="./Assets/janetmam.jpeg" class="p"><p class= "n">Mrs.G.Janet</p>              <p class= "b" style="width: 100%;">Debating Union Coordinator</p> <p class="content"></p></div>
+      <div class="carousel-cell"><img src="./Assets/afra.jpeg" class="p"><p class= "n">Afra naaz aftab</p>              <p class= "b">President</p> <p class="content"></p></div>
+      <div class="carousel-cell"><img src="./Assets/sri pranav.jpeg" class="p"><p class= "n">Sri Pranauv</p>              <p class= "b">Vice President</p></div>
+      <div class="carousel-cell"><img src="./Assets/monish.jpeg" class="p"><p class= "n">Mohneesh </p>              <p class= "b">Secretary</p></div>
+      <div class="carousel-cell"><img src="./Assets/shwetha.jpeg" class="p"><p class= "n">Swetha D</p>              <p class= "b">PRO</p></div>
+      <div class="carousel-cell"><img src="./Assets/balaji.jpeg" class="p"><p class= "n">Balaji D </p>              <p class= "b">Event-Manager</p></div>
+      <div class="carousel-cell"><img src="./Assets/priyadarshini.jpeg" class="p"><p class= "n">Priyadharshini</p>              <p class= "b">Designer</p></div>
+
+    </div>
+      
+</div>
+
+</div>
+</div>
+
+
+
+</body>
+<footer class="footer" id="contact">
+  <div class="footercon">
+      <div class="footerrow">
+          <div id="conta" class="footer-col">
+              <h4>ORGANIZING COMMITTIE</h4>
+              <ul>
+                  <li style="color: white; width: 100%;"><strong>Adhityan Aravind</strong><br>+91 99529 89679 </li>
+                  <li style="color: white;"><strong>Afra naaz aftab</strong><br>+91 99627 99668 </li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>FACULTY COORDINATORS</h4>
+              <ul>
+                  <li style="color: white;">Mrs.<b>Alamelu G</b><br>Atrium Coordinator</li>
+                  <li style="color: white;">Mrs.<b>Janet G</b><br>Debating Union Coordinator</li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Atrium</h4>
+              <ul style="display: flex; gap: 2em;">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/recatrium?igsh=NzBmMjdhZWRiYQ==" class="fa fa-instagram"></a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Debating Union</h4>
+            <ul style="display: flex; gap: 2em;">
+              <li><a href="https://www.facebook.com/recdebate?mibextid=ZbWKwL" class="fa fa-facebook"></a></li>
+              <li><a href="https://www.instagram.com/recdebate?igsh=NzBmMjdhZWRiYQ==" class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
+</footer>
+
+<script>
+    var typed = new Typed('#wowpara', {
+        strings: ["w<span style= 'color:#8DC63F'>o</span>w '24" ,"war <span style= 'color:#8DC63F'>of</span> words '24 "],
+        typeSpeed:20,
+        backSpeed: 20,
+        smartBackspace: true,
+
+        
+    });
+    
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $("nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+$(document).ready(function(){
+$(".b").click(function(){
+    $(this).toggleClass("b");
+    $(this).toggleClass("b-selected");
+ });
+});
+
+var elem = document.querySelector('.carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellalign: 'right',
+  pageDots: false,
+  groupCells: '20%',
+  selectedAttraction: 0.03,
+  friction: 0.15
+});
+var flkty = new Flickity( '.carousel2', {
+  cellalign: 'right',
+  pageDots: false,
+  groupCells: '20%',
+  selectedAttraction: 0.03,
+  friction: 0.15
+});
+
+  </script>
+</html>
